@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { DataService } from './data.service';
 import { PwaService } from './pwa.service';
 
+export let browserRefresh = false;
+
 @NgModule({
   declarations: [
     AppComponent
@@ -20,7 +22,7 @@ import { PwaService } from './pwa.service';
   ],
   providers: [
     DataService,
-    PwaService
+    PwaService,
   ],
   bootstrap: [AppComponent]
 })
